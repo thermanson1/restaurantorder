@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Order Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+
+
+        <script src="bootstrap.min.js" type="text/javascript"></script>
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="containter">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Rae's Place</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="containter">
+                    <div class="jumbotron">
+                        <h1>Order Page</h1>
+                        <p>Please make your selection from the following menu choices: </p>
+                    </div>
+                </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>Breakfast</h3>
+                                    <form name="breakfastForm" id="breakfastForm" method="POST" action="submitOrder">
+                                        <input type="checkbox" name="pancakes" value="pancakes">Pancakes<br>
+                                        <input type="checkbox" name="omelet" value="omelet">Omelet<br>
+                                        <input type="checkbox" name="waffles" value="waffles">Waffles<br>
+                                        <input type="checkbox" name="scrambler" value="scrambler">Scrambler<br>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Lunch</h3>
+                                    <form name="lunchForm" id="lunchForm" method="POST" action="submitOrder">
+                                        <input type="checkbox" name="hamswiss" value="hamswiss">Ham and Swiss Sandwich<br>
+                                        <input type="checkbox" name="burger" value="burger">Burger<br>
+                                        <input type="checkbox" name="hotDog" value="hotDog">Hot Dog<br>
+                                        <input type="checkbox" name="macCheese" value="macCheese">Mac & Cheese<br>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Dinner</h3>
+                                    <form name="dinnerForm" id="dinnerForm" method="POST" action="submitOrder">
+                                        <input type="checkbox" name="spaghetti" value="spaghetti">Spaghetti<br>
+                                        <input type="checkbox" name="fajita" value="fajita">Fajita<br>
+                                        <input type="checkbox" name="steak" value="steak">Steak<br>
+                                        <input type="checkbox" name="chickenParm" value="chickenParm">Chicken Parmesan<br>
+                                    
+                                </div>
+                            </div>
+                            <p></p>
+                            <button class="btn btn-info">Submit Order</button>
+                        </div>
+                    </div>
+
+        </nav> 
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="containter">
+                <p class="navbar-text"><i>&copy; 2014 Teraesa Hermanson</i></p>
+            </div>
+        </nav>
+       
+        
+    </body>
+</html>
